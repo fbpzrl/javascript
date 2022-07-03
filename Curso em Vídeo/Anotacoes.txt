@@ -1,0 +1,47 @@
+## ANOTAÇÕES
+
+Os três pilares do Website - HTML: Conteúdo - CSS: Estilo - JavaScript: Interação (do lado do cliente)
+
+O JavaScript foi criado por um funcionário da empresa Netscape chamado Brendan Eike. Inicialmente ele se chamava LiveScript mas, nessa época, uma outra linguagem estava em alta e sendo bastante falada: o Java.
+Foi então que a Netscape decidiu "surfar" na onda do Java e chamar o LiveScript de JavaScript, mesmo sendo linguagens de programação completamente difentes em seus propósitos.
+
+NodeJS é baseado no Motor V8 do Chrome e foi feito para executar o JavaScript fora dos navegadores (cliente) e possa ser executado no servidor.
+
+ECMAScript é a padronização do JavaScript (ECMA é uma empresa de padronização Europeia, parecida com a ISO). - ES5 e ES6 são as versões mais utilizadas
+
+O script do JavaScript deve ser colocado sempre logo antes do fechamento da tag </body>, pois assim todo o conteúdo e estilos já terão sido carregados.
+
+Variáveis do JavaScript podem conter acentos e símbolos
+
+A função Number() converte uma String em um número - É possível também definir explicitamente a conversão: - Number.parteInt() - Number.parseFloat()
+A função String() converte um número em String - Também é possível converter um número utilizando a função toString()
+
+Placeholder: ${} - Utiliza crase
+Exemplo: window.alert(`A soma dos valores ${n1} e ${n2} é ${s}.`);
+
+Ordem de Precedência dos Operadores Aritméticos
+1º : ()    : Parênteses
+2º : **    : Potências
+3º : * / % : Multiplicação, Divisão e Mod (não têm precedência entre si. É quem aparecer primeiro)
+4º : + -   : Soma e Subtração (não têm precedência entre si. É quem aparecer primeiro)
+
+Ordem de Precedência dos Operadores Relacionais (não têm precedência entre si. É quem aparecer primeiro)
+<, >, <=, >=, ==, !=, ===, !==
+
+Ordem de Precedência dos Operadores Lógicos
+1º : ! (not)
+2º : && (and)
+3º : || (or)
+
+Ordem de Precedêmcia entre Operadores
+1º : Operadores Aritméticos
+2º : Operadores Relacionais (< >, ==, !=, ===, !== )
+3º : Operadores Lógicos (&&, ||)
+Exemplo: 5 > 8 && 8 % 2 == 0
+Resultado = false
+
+Operador Ternário
+? - Se (if)
+: - Então (then)
+Exemplo: media > 7 ? 'APROVADO' : 'REPROVADO'
+

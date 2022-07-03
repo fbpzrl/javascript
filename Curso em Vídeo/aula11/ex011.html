@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+
+<body>
+    <h1>Sistema de Países</h1>
+    Informe seu país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+
+        function verificar() {
+
+            var txtpais = document.querySelector('input#txtpais')
+            var pais = String(txtpais.value) //CONVERTE O INPUT EM STRING
+
+            var resultado = document.querySelector('div#resultado')
+
+            resultado.innerHTML = `<p>Seu país se chama <strong>${pais.toUpperCase()}</strong>.</p>`
+
+            if (pais.toLowerCase() == 'brasil') { //NO IF TEM QUE USAR ASPAS DUPLAS
+                resultado.innerHTML += '<p>Você é Brasileiro.</p>'
+            }
+            else {
+                resultado.innerHTML += '<p>Você é estrangeiro.</p>'
+            }
+        }
+
+    </script>
+</body>
+
+</html>
