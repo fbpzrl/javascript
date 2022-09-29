@@ -1,0 +1,19 @@
+const a = 10
+const b = 10.5
+const c = 'Maria'
+const d = 'a'
+const e = false
+const f = {name: 'Maria', age: 25}
+const g = ['a', 15, false, 'maria']
+const h = null
+const i = undefined
+
+console.log(a + " typeof = " + typeof a)
+console.log(b + " typeof = " + typeof b)
+console.log(c + " typeof = " + typeof c)
+console.log(d + " typeof = " + typeof d)
+console.log(e + " typeof = " + typeof e)
+console.log(f + " typeof = " + typeof f)
+console.log(g + " typeof = " + typeof g)
+console.log(h + " typeof = " + typeof h)
+console.log(i + " typeof = " + typeof i)
