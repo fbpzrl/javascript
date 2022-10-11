@@ -4,12 +4,15 @@ const p1 = {
     quantity: 2
 }
 
+//Criando a classe Produto com a Função Construtora
+//Os atributos são criados dentro da Função Construtura utilizando a palavra "this"
 const Product = function(name, price, quantity) {
     this.name = name
     this.price = price
     this.quantity = quantity
 }
 
+//Todos os métodos devem ser criados dentro do Prototype (Boa prática)
 Product.prototype.total = function() {
     return this.price * this.quantity
 }
