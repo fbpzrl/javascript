@@ -1,6 +1,6 @@
 /* PROMISE
 *  É um objeto que pode executar uma função Assíncrona e mudar o seu estado (PromiseState) 
-   de Pendente (pending) para Realizado (fulfilled) ou Rejeitado (rejected) depois de algum
+   de Pendente (pending) para Resolvido (fulfilled) ou Rejeitado (rejected) depois de algum
    tempo.
    Promise é um modelo de execução muito utilizado para fazer operações Assíncronas (Requisições).
 */
@@ -21,7 +21,7 @@ const minhaPromise = new Promise(f)
 
 minhaPromise
 .then(valor => {
-    console.log("Realizou com o valor " + valor)
+    console.log("Resolveu com o valor " + valor)
 })
 .catch(valor => {
     console.log("Rejeitou com o valor " + valor)
