@@ -27,7 +27,7 @@
                 <form name="newAddress">
                     <div class="form-control">
                         <label for="cep">CEP:</label>
-                        <input type="text" name="cep" id="cep" class="form-input" placeholder="CEP">
+                        <input type="text" name="cep" id="cep" class="form-input" placeholder="CEP" data-error="cep">
                         <div class="error-message">
                             Campo requerido
                         </div>
@@ -39,7 +39,7 @@
                     <div class="form-control">
                         <label for="number">Número:</label>
                         <input type="text" name="number" id="number" class="form-input" placeholder="Número">
-                        <div class="error-message">
+                        <div class="error-message" data-error="number">
                             Campo requerido
                         </div>
                     </div>
@@ -49,8 +49,8 @@
                     </div>
 
                     <div class="btn-container">
-                        <button class="btn" type="submit">Salvar</button>
-                        <button class="btn">Limpar</button>
+                        <button name="btnSave" class="btn" type="submit">Salvar</button>
+                        <button name="btnClear" class="btn">Limpar</button>
                     </div>
                 </form>
             </div>
