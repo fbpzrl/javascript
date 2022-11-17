@@ -32,6 +32,7 @@ export function init() {
     state.errorNumber = document.querySelector('[data-error="number"]')
 
     state.inputNumber.addEventListener('change', handleInputNumberChange)
+    state.btnClear.addEventListener('click', handleBtnClearClick)
 }
 
 function handleInputNumberChange(event) {
@@ -41,6 +42,24 @@ function handleInputNumberChange(event) {
     else {
         setFormError("number", "")
     }
+}
+
+function handleBtnClearClick(event) {
+    //Sempre que for um botão de formulário não queremos que um formulário enviado chame novamente outra pagina
+    event.preventDefault();
+    clearForm();
+}
+
+function clearForm() {
+    state.inputCep.value = ""
+    state.inputStreet.value = ""
+    state.inputNumber.value = ""
+    state.inputCity.value = ""
+
+    setFormError("cep", "")
+    setFormError("number", "")
+
+    state.inputCep.focus()
 }
 
 function setFormError(key, value) {
