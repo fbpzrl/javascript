@@ -1,6 +1,6 @@
 const notas = [7, 7, 8, 9]
 
-const novasNotas = [...notas] //pega apenas o conteúdo do array notas. Se não fizer dessa forma, o JavaScript faz com que os dois arrays passem a apontar para a mesma referência na memória. Assim, sempre que um for alterado, o outro também será. E neste caso, não é isso que queremos.
+const novasNotas = [...notas] //pega apenas o conteúdo do array notas. Se não fizer dessa forma, o JavaScript faz com que os dois arrays passem a apontar para a mesma referência na memória. Assim, sempre que um for alterado, o outro também será. E neste caso, não é isso que queremos. As reticências no JavaScript são chamadas de Spread Operator (ou operador de espalhamento), que faz o programa se comportar conforme descrito acima.
 
 novasNotas.push(10)
 
